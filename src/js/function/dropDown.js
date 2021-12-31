@@ -3,7 +3,7 @@
 //================================================================
 export function dropDown(){
     const dropMenuButtons = document.querySelectorAll('.menu__button');
-    const mediaQuery = window.matchMedia('(min-width: 992px)');
+    const mediaQuery = window.matchMedia('(min-width: 768px)');
     if(dropMenuButtons){
         for(let i = 0; i < dropMenuButtons.length; i++){
             let dropMenuButton = dropMenuButtons[i];

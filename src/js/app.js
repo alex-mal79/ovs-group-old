@@ -6,23 +6,23 @@
 // =================================================
 // Меню бургер
 // =================================================
-    // import { burger } from "./function/burger.js";
-    // burger();
+    import { burger } from "./function/burger.js";
+    burger();
 //==================================================
 //Определяем устройство на котором открыта страница
 //==================================================
-    // import { isMobilePack } from "./function/isMobile.js";
-    // isMobilePack();
+    import { isMobilePack } from "./function/isMobile.js";
+    isMobilePack();
 // =================================================
 // Шапка при скролле
 // =================================================
-    // import { headerScroll } from "./function/headerScroll.js";
-    // headerScroll();
+    import { headerScroll } from "./function/headerScroll.js";
+    headerScroll();
 // =================================================
 //Меню DropDown
 // =================================================
-    // import { dropDown } from "./function/dropDown.js";
-    // dropDown();
+    import { dropDown } from "./function/dropDown.js";
+    dropDown();
 // =================================================
 //Анимация при скролле
 // =================================================
@@ -36,8 +36,8 @@
 // =================================================
 //Динамический адаптив
 // =================================================
-    // import { dynamicAdaptiv } from "./app/dynamicAdapt.js";
-    // dynamicAdaptiv();
+    import { dynamicAdaptiv } from "./app/dynamicAdapt.js";
+    dynamicAdaptiv();
 // =================================================
 //Динамический спойлер
 // =================================================

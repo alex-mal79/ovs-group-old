@@ -1,8 +1,8 @@
-$maxWidth: 1366px; //Размер макета
-$maxWidthContainer: 1230px; //Размер котейнера
+$maxWidth: 1920px; //Размер макета
+$maxWidthContainer: 1220px; //Размер котейнера
 
 // Break point
-$md1: $maxWidthContainer + 15px;
+$md1: $maxWidthContainer + 10px;
 $md2: 992px;
 $md3: 768px;
 $md4: 480px;
@@ -12,4 +12,14 @@ $md4: 480px;
     // Цветовая схема
     --color-black: #000;
     --color-white: #fff;
+    --color-ebony: #253342;
+    --color-alpine: #BB8E34;
+    --color-mine: #373737;
+    --color-slate: #798797;
+    --color-jungle: #27AE60;
+
+    --shadow-logo: 0px -2px 6px rgba(252, 230, 119, 0.26);
+    //Шрифты
+    --font-roboto: 'Roboto', sans-serif;
+    --font-montserrat: 'Montserrat', sans-serif;
 }

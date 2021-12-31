@@ -14,7 +14,7 @@
 //==============================================================
 //      Подключение шрифтов
 //==============================================================
-// @import 'parts/_fonts';
+@import 'parts/_fonts';
 // @import 'parts/_icons-fonts';
 //==============================================================
 //      Основные настройки
@@ -25,13 +25,16 @@ body{
     &._lock{
         overflow: hidden;
     }
+    font-family: var(--font-roboto);
+    font-weight: 400;
+    color: var(--color-mine);
 }
 .page{
     display: flex;
     flex-direction: column;
     min-height: 100%;
     overflow: hidden;
-    background-color: rgb(150, 161, 161);
+    background-color: var(--color-white);
 }
 //==============================================================
 //      Подключение общих стилей
@@ -45,7 +48,7 @@ body{
     width: 100%;
 }
 
-@import 'index/_index';
+@import 'index/_fullscreen';
 
 @import 'parts/_footer';
 
