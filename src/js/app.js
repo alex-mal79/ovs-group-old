@@ -41,5 +41,5 @@
 // =================================================
 //Динамический спойлер
 // =================================================
-    // import { spoilers } from "./app/spoilers.js";
-    // spoilers();
+    import { spoilers } from "./app/spoilers.js";
+    spoilers();

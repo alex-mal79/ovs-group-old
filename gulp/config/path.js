@@ -42,5 +42,5 @@ export const path = {
     buildFolder: buildFolder,
     srcFolder: srcFolder,
     rootFolder: rootFolder,
-    ftp: `host1838542.hostland.pro/htdocs/www`
+    ftp: `ovs-group.ru/htdocs/www`
 }
