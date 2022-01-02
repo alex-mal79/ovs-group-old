@@ -117,12 +117,13 @@
     }
     // .address__icons
     &__icons {
-        width: 40px;
+        flex: 0 0 40px;
         height: 40px;
         margin: 0px 15px 0px 0px;
     }
     // .address__wrap
     &__wrap {
+        flex: 1 1 auto;
     }
     // .address__inner
     &__inner {

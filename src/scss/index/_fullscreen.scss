@@ -1,3 +1,173 @@
 .fullscreen {
+    position: relative;
     min-height: 100vh;
+    background: url(../img/bg-index.jpg) center 0 / cover no-repeat;
+    &::before {
+        position: absolute;
+        content: '';
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: var(--color-black-tr);
+    }
+    // .fullscreen__container
+    &__container {
+        display: flex;
+        align-items: flex-end;
+        align-content: flex-end;
+        flex-wrap: wrap;
+        min-height: 100vh;
+        @include adaptive-value('padding-top', 150, 100, 1);
+        @include adaptive-value('padding-bottom', 80, 40, 1);
+        color: var(--color-white);
+    }
+    // .fullscreen__slider
+    &__slider {
+        flex: 0 1 100%;
+        min-width: 0;
+        margin: 0px 0px 60px 0px;
+    }
+    // .fullscreen__swiper
+    &__swiper {
+    }
+    // .fullscreen__wrap
+    &__wrap {
+        flex: 0 1 100%;
+        display: flex;
+        min-width: 0;
+    }
+    // .fullscreen__thumbs
+    &__thumbs {
+        flex: 0 1 66.667%;
+        min-width: 0;
+        @media(max-width: $md2){
+            flex: 0 1 80%;
+        }
+        @media (max-width: $md4) {
+            display: none;
+        }
+    }
+    // .fullscreen__controls
+    &__controls {
+        position: relative;
+        flex: 0 1 33.333%;
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-end;
+        z-index: 5;
+        @media(max-width: $md2){
+            flex: 0 1 20%;
+        }
+        @media (max-width: $md4) {
+            flex: 0 1 100%;
+            justify-content: flex-start;
+            padding: 20px 0px 0px 0px;
+        }
+    }
+    // .fullscreen__progress
+    &__progress {
+        @media (min-width: $md4) {
+            display: none;
+        }
+        @media (max-width: $md4) {
+            position: absolute;
+            display: block;
+            &.swiper-pagination-progressbar {
+                background-color: var(--color-slate);
+            }
+            &.swiper-pagination-progressbar .swiper-pagination-progressbar-fill {
+                background-color: var(--color-white);
+            }
+            &.swiper-pagination-progressbar.swiper-pagination-horizontal {
+                height: 1px;
+            }
+        }
+    }
+    // .fullscreen__button-prev
+    // .fullscreen__button-next
+    &__button-prev,
+    &__button-next {
+        border: 1px solid var(--color-alpine);
+        background-color: transparent;
+        transition: background-color 0.3s ease 0s;
+        @media (any-hover: hover) {
+            &:hover {
+                background-color: var(--color-iron-tr);
+            }
+        }
+    }
+}
+.slide-fullscreen {
+    // .slide-fullscreen__content
+    &__content {
+        display: flex;
+        flex-direction: column;
+    }
+    // .slide-fullscreen__text
+    &__text {
+        display: inline-block;
+        @include adaptive-value('margin-bottom', 40, 20, 1);
+        max-width: 600px;
+        font-weight: 500;
+        @include adaptive-font(40, 24);
+        line-height: 117%;
+        color: var(--color-white);
+    }
+    // .slide-fullscreen__button
+    &__button {
+    }
+}
+.thumbs-fullscreen {
+    .swiper-slide-thumb-active {
+        .thumbs-fullscreen__slide {
+            p {
+                color: var(--color-white);
+                &::after {
+                    width: 90%;
+                }
+            }
+        }
+    }
+    // .thumbs-fullscreen__swiper
+    &__swiper {
+    }
+    // .thumbs-fullscreen__slide
+    &__slide {
+        padding: 0px 10px 0px 0px;
+        p {
+            position: relative;
+            display: inline-block;
+            @include adaptive-value("max-width", 235, 200, 1);
+            padding: 0px 0px 10px 0px;
+            font-weight: 400;
+            @include adaptive-font(22, 18);
+            line-height: 116%;
+            color: var(--color-slate);
+            transition: color 0.3s ease 0s;
+            cursor: pointer;
+            @media (any-hover: hover) {
+                &:hover {
+                    color: var(--color-white);
+                }
+            }
+            &::before,
+            &::after {
+                position: absolute;
+                content: '';
+                left: 0;
+                bottom: 0;
+                height: 1px;
+            }
+            &::before {
+                width: 100%;
+                background-color: var(--color-slate);
+            }
+            &::after {
+                width: 0;
+                transition: width 0.3s ease 0s;
+                background-color: var(--color-white);
+            }
+        }
+    }
 }

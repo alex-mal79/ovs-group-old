@@ -1,7 +1,77 @@
+.title {
+    font-family: var(--font-montserrat);
+    font-weight: 600;
+    @include adaptive-font(48, 24);
+    line-height: 125%;
+    color: var(--color-ebony);
+}
 .title-footer {
     font-family: var(--font-montserrat);
     font-weight: 500;
     font-size: 15px;
     color: var(--color-white);
     text-transform: uppercase;
+}
+.controls {
+    // .controls__buttons
+    &__buttons {
+        display: flex;
+        .swiper-button-disabled {
+            opacity: 0.5;
+        }
+    }
+    // .controls__button-prev
+    // .controls__button-next
+    &__button-prev,
+    &__button-next {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        @include adaptive-value('width', 50, 40, 1);
+        @include adaptive-value('height', 50, 40, 1);
+        border-radius: 100%;
+    }
+    // .controls__button-prev
+    &__button-prev {
+        margin: 0px 10px 0px 0px;
+    }
+    // .controls__button-next
+    &__button-next {
+    }
+    // .controls__icon-prev
+    // .controls__icon-next
+    &__icon-prev,
+    &__icon-next {
+        width: 25px;
+        height: 12px;
+        fill: var(--color-alpine);
+    }
+    // .controls__icon-prev
+    &__icon-prev {
+    }
+    // .controls__icon-next
+    &__icon-next {
+    }
+}
+.button-more {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @include adaptive-value('width', 200, 160, 1);
+    @include adaptive-value('height', 60, 50, 1);
+    border: 1px solid var(--color-alpine);
+    border-radius: 5px;
+    font-family: var(--font-montserrat);
+    font-weight: 500;
+    @include adaptive-font(20, 16);
+    color: var(--color-alpine);
+    text-transform: uppercase;
+    background-color: transparent;
+    transition: background-color 0.3s ease 0s, color 0.3s ease 0s;
+    @media (any-hover: hover) {
+        &:hover {
+            background-color: var(--color-alpine-tr);
+            color: var(--color-white);
+        }
+    }
 }

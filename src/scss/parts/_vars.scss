@@ -11,16 +11,21 @@ $md4: 480px;
 :root {
     // Цветовая схема
     --color-black: #000;
+    --color-black-tr: rgba(0, 0, 0, 0.7);
     --color-white: #fff;
     --color-ebony: #253342;
     --color-ebony-clay: #1f2b38;
     --color-alpine: #bb8e34;
+    --color-alpine-tr: rgba(187, 142, 52, 0.5);
     --color-mine: #373737;
     --color-slate: #798797;
     --color-jungle: #27ae60;
     --color-iron: #c9cccf;
-
+    --color-iron-tr: rgba(201, 204, 207, 0.2);
+    --color-gallery: #ececec;
+    //Тени
     --shadow-logo: 0px -2px 6px rgba(252, 230, 119, 0.26);
+    --shadow-cart: 3px 4px 10px rgba(0, 0, 0, 0.4);
     //Шрифты
     --font-roboto: 'Roboto', sans-serif;
     --font-montserrat: 'Montserrat', sans-serif;
